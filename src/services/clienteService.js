@@ -1,18 +1,16 @@
-// ===========================================
 // SERVICIO DE CLIENTES - API/BASE DE DATOS
-// ===========================================
-// Aquí defines todas las operaciones CRUD.
-// Actualmente usa localStorage como mock,
-// pero puedes reemplazarlo fácilmente con fetch a tu API.
+// Se definen todas las operaciones CRUD a utilizar.
+// minetras no tenga bd o api se usa localStorage como mock,
+// se maneja la opcion de dejar listo para usar con fetch a tu API.
 
-const API_URL = 'http://localhost:3000/api/clientes' // Cambia esto a tu URL de API real
+const API_URL = 'http://localhost:3000/api/clientes' // constante de la api real o la bd si se usara en la prueba
 
 // Simula un delay de red (opcional, para testing)
 const simulateDelay = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms))
 
-// ===========================================
+
 // OPCIÓN 1: LocalStorage (mock - actual)
-// ===========================================
+
 
 const getClientesFromLocalStorage = () => {
   const data = localStorage.getItem('clientes')
@@ -23,9 +21,9 @@ const saveClientesToLocalStorage = (clientes) => {
   localStorage.setItem('clientes', JSON.stringify(clientes))
 }
 
-// ===========================================
+
 // CRUD OPERATIONS
-// ===========================================
+
 
 /**
  * GET ALL - Obtener todos los clientes
@@ -37,7 +35,7 @@ export const obtenerClientes = async () => {
     // OPCIÓN 1: LocalStorage (actual)
     return getClientesFromLocalStorage()
 
-    // OPCIÓN 2: API REST (descomenta cuando tengas backend)
+    // OPCIÓN 2: API REST
     /*
     const response = await fetch(API_URL)
     if (!response.ok) throw new Error('Error al obtener clientes')
@@ -173,9 +171,9 @@ export const eliminarCliente = async (id) => {
   }
 }
 
-// ===========================================
+
 // FUNCIONES AUXILIARES (opcional)
-// ===========================================
+
 
 /**
  * Búsqueda de clientes por nombre

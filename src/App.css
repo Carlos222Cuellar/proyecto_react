@@ -4,9 +4,9 @@
   padding: 2rem;
 }
 
-/* ===========================================
+/* 
    CONTENEDOR GENERAL
-   =========================================== */
+    */
 .formulario-container {
   margin-top: 2rem;
 }
@@ -17,9 +17,9 @@
   font-size: 1.8rem;
 }
 
-/* ===========================================
-   HEADER DE LA LISTA
-   =========================================== */
+/* 
+   CABECERA DE LA LISTA
+    */
 .header-lista {
   display: flex;
   justify-content: space-between;
@@ -31,9 +31,9 @@
   margin: 0;
 }
 
-/* ===========================================
+/* 
    LISTA DE CLIENTES
-   =========================================== */
+    */
 .lista-clientes {
   display: grid;
   gap: 1rem;
@@ -83,9 +83,9 @@
   color: #aaa;
 }
 
-/* ===========================================
-   ACCIONES (EDITAR/ELIMINAR)
-   =========================================== */
+/* 
+    EDITAR-----ELIMINAR
+    */
 .acciones-cliente {
   display: flex;
   flex-direction: column;
@@ -129,9 +129,9 @@
   cursor: not-allowed;
 }
 
-/* ===========================================
-   LISTA VACÍA
-   =========================================== */
+/* 
+   NULL lIST
+    */
 .lista-vacia {
   text-align: center;
   padding: 3rem 1rem;
@@ -146,9 +146,9 @@
   font-size: 1.1rem;
 }
 
-/* ===========================================
+/* 
    FORMULARIO
-   =========================================== */
+    */
 .formulario {
   display: flex;
   flex-direction: column;
@@ -192,9 +192,9 @@
   cursor: not-allowed;
 }
 
-/* ===========================================
-   CAMPO DE ARCHIVO (FOTO)
-   =========================================== */
+/* 
+   FOTO
+   */
 .grupo-campo input[type="file"] {
   padding: 0.5rem;
   cursor: pointer;
@@ -217,9 +217,9 @@
   border: 3px solid #646cff;
 }
 
-/* ===========================================
-   BOTONES DEL FORMULARIO
-   =========================================== */
+/* 
+   BOTONES
+    */
 .botones-formulario {
   display: flex;
   gap: 0.5rem;
@@ -270,9 +270,9 @@
   cursor: not-allowed;
 }
 
-/* ===========================================
-   BOTÓN "NUEVO CLIENTE"
-   =========================================== */
+/* 
+    "NUEVO CLIENTE"
+    */
 .btn-nuevo {
   padding: 0.7rem 1.2rem;
   background: #646cff;
@@ -289,9 +289,9 @@
   background: #535bf2;
 }
 
-/* ===========================================
+/* 
    MENSAJES DE ESTADO
-   =========================================== */
+    */
 .mensaje-carga {
   text-align: center;
   color: #aaa;
@@ -309,9 +309,9 @@
   text-align: center;
 }
 
-/* ===========================================
-   RESPONSIVE
-   =========================================== */
+/* 
+   UX
+    */
 @media (max-width: 768px) {
   .tarjeta-cliente {
     grid-template-columns: 1fr;
@@ -340,9 +340,9 @@
   }
 }
 
-/* ===========================================
-   MODO CLARO
-   =========================================== */
+/* 
+   FONDO BLANCO
+   */
 @media (prefers-color-scheme: light) {
   .formulario-container h1 {
     color: #213547;
