@@ -1,3 +1,10 @@
+# proyecto_react
+prueba de react crud y listo para conectarse a una api o bd
+
+
+# proyecto_react
+prueba de react crud y listo para conectarse a una api o bd
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
